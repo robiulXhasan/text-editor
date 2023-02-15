@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://kit.fontawesome.com/1addb97798.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-100 via-purple-200 to-pink-300">
+    <header class="sm:w-100 md:w-3/4 mx-auto ">
+        <h1 class="text-5xl text-center my-10 font-semibold">Welcome to <span class="text-red-600">Text Editor</span>!!!
+        </h1>
+    </header>
+    <main class="sm:w-100 md:w-3/4 mx-auto text-center bg-indigo-200 p-3 rounded">
+        <div class=" mb-2 px-4 grid grid-cols-3 sm:gap-2 md:gap-44 2xl:gap-96">
+            <div class="grid grid-cols-3 gap-0 text-left">
+                <i id="text-bold" class="fa-solid fa-bold"></i>
+                <i id="text-italic" class="fa-solid fa-italic"></i>
+                <i id="text-underline" class="fa-solid fa-underline"></i>
+            </div>
+            <div class="grid grid-cols-4 sm:gap-0 md:gap-4">
+
+                <i id="text-left" class="fa-solid fa-align-left"></i>
+                <i id="text-center" class="fa-solid fa-align-center"></i>
+                <i id="text-right" class="fa-solid fa-align-right"></i>
+                <i id="text-justify" class="fa-solid fa-align-justify"></i>
+
+            </div>
+            <div class="grid grid-cols-4 sm:gap-0 md:gap-4">
+
+                <input id="font-size" type="number" class="rounded">
+                <p id="text-transform" class="font-medium">aA</p>
+                <p id="text-capitalize" class="font-medium">
+                    AA
+                </p>
+                <input id="text-color" type="color" id="favcolor" name="favcolor">
+            </div>
+
+        </div>
+        <textarea id="text-area" style="min-height: 350px;" class="p-3 w-full border border-slate-900" name=""
+            id=""></textarea>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
